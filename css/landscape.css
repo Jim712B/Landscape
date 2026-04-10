@@ -1,0 +1,67 @@
+ /* Remove all default spacing and prevent scroll */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* disables scrolling */
+        font-family: Arial, sans-serif;
+    }
+
+    /* Fullscreen background image */
+    body {
+        background: url('../images/landscape.jpg') no-repeat center center;
+        background-size: cover; /* ensures full coverage */
+    }
+
+    /* Top navigation (transparent, no box look) */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        box-sizing: border-box;
+        background: transparent; /* no rectangle */
+    }
+
+    /* Links spread evenly */
+    .nav-links {
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /* Link styling */
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: x-large;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    /* Green call box */
+    .call-box {
+        background-color: mediumseagreen;
+        color: white;
+        font-weight: bold;
+        font-size: calc(xx-large + 6px);
+        padding: 10px 25px;
+        white-space: nowrap;
+    }
+
+    /* Keep layout stable on smaller screens */
+    @media (max-width: 900px) {
+        .nav-links a {
+            font-size: large;
+        }
+
+        .call-box {
+            font-size: x-large;
+            padding: 8px 15px;
+        }
+    }
