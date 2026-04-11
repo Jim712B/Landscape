@@ -1,24 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jim's Landscape Services</title>
-<head>
-<link rel="stylesheet" href="css/landscape.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jim's Landscape Services</title>
+    <link rel="stylesheet" href="css/landscape.css">
 </head>
 <body>
+
 <div class="navbar">
     <div class="nav-links">
-        <a href="#">SERVICES</a>
-        <a href="#">SERVICE AREAS</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">RESOURCES</a>
-        <a href="#">CONTACT US</a>
+        <a href="#" id="servicesLink">LAWN SERVICE</a>
+        <a href="#" id="serviceAreaLink">SERVICE AREA</a>
+        <a href="#" id="aboutUsLink">ABOUT US</a>
+        <a href="#" id="poolLink">POOL SERVICE</a>
     </div>
-    <div class="call-box">
-        CALL: 1-800-877-0230
+    <div class="call-box" id="callBox">
+        CALL: 1-800-555-9903
     </div>
 </div>
+
+<!-- SERVICES POPUP -->
+<div id="servicesPopup" tabindex="0">
+    <div class="popup-content">
+        <div>
+            <h2>Design</h2>
+            <p>Landscape design and planning</p>
+        </div>
+        <div>
+            <h2>Maintenance</h2>
+            <p>Mowing and trimming, fertilizing, sprinkler systems, leaf raking, and seasonal upkeep</p>
+        </div>
+        <div>
+            <h2>Installation</h2>
+            <p>New grass and plants</p>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICE AREA POPUP -->
+<div id="serviceAreaPopup">
+    <div class="popup-inner">
+        <button class="close-btn" id="closeMap">&times;</button>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps?q=7416+La+Cosa+Dr,+Dallas,+TX+75248&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUTUS POPUP -->
+<div id="aboutUsPopup" tabindex="0">
+    <!-- div class="popup-content" -->
+    <div class="aboutus-popup-content">
+         <p>I have provided landscape services including mowing, edging, mulching and grass 
+         installation, fertilizing, bush trimming, sprinkler repair and maintenance
+         for 10+ years at 7416 La Cosa Drive in Dallas, TX.  My rates are very reasonable, and I 
+         recently expanded my services to include swimming pool maintenance and mail 
+         pickup &amp; delivery at LJ's.  If you are a satisfied client, please take just a few minutes 
+         to rate my services.  Thank you for your continued patronage.
+         </p>
+	 </div>
+</div>
+
+!-- POOLPOPUP -->
+<div id="poolPopup" tabindex="0">
+    <div class="pool-popup-content">
+        <div>
+            <h2>Water Service</h2>
+            <p>Review water level 2x week</p>
+            <p>Add water as needed to maintain acceptable water level</p>
+            <p>Empty Polaris leaf bag 1x week</p>
+        </div>
+        <div>
+            <h2>Chlorine Service</h2>
+            <p>Add chlorine 1x week</p>
+            <p>Add chlorine tablet to floating duck as needed</p>
+        </div>
+        <div>
+            <h2>Mail Service</h2>
+            <p>Move packages into house as needed</p>
+            <p>Collect mail 2x week</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
 </body>
 </html>
